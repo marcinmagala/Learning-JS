@@ -4,6 +4,78 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff3bf;
+html {
+  font-size: 62.5%;
 }
+
+body {
+  background-color: #fff;
+}
+
+.box {
+  background-color: #eee;
+  width: 45rem;
+  height: 45rem;
+  border: 5px solid #000;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 10rem auto;
+  transition: 0.5s;
+}
+/* 
+
+.ball {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1000px;
+  background-color: royalblue;
+  transition: 5s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(341px);
+  }
+  10% {
+    transform: translateY(140px);
+  }
+  20% {
+    transform: translateY(341px);
+  }
+  30% {
+    transform: translateY(160px);
+  }
+  40% {
+    transform: translateY(341px);
+  }
+  50% {
+    transform: translateY(180px);
+  }
+  60% {
+    transform: translateY(341px);
+  }
+  70% {
+    transform: translateY(220px);
+  }
+  80% {
+    transform: translateY(341px);
+  }
+  90% {
+    transform: translateY(280px);
+  }
+  100% {
+    transform: translateY(341px);
+  }
+}
+
+.box:hover .ball {
+   
+  animation-name: fall;
+  animation-duration: 10s;
+   animation-timing-function: linear; 
+} */

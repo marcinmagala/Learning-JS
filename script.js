@@ -102,3 +102,60 @@
 // ######################################
 // ######################################
 // ######################################
+
+// Algorytmic two sum
+
+// const arr = [2, 7, 11, 16];
+// const target = 13;
+
+// let tempSum;
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 1; j < arr.length; j++) {
+//     // console.log(arr[j]);
+//     if (arr[i] + arr[j] === target) {
+//       console.log(i, j);
+//     }
+//   }
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//   tempSum = target - arr[i];
+// }
+
+//HASHMAP
+
+// const twoSum = function (arr, target) {
+//   const previousValue = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     const currentNumber = arr[i];
+//     const neededValue = target - currentNumber;
+//     const index2 = previousValue[neededValue];
+//     if (index2 != undefined) {
+//       return [index2, i];
+//     } else {
+//       previousValue[currentNumber] = i;
+//     }
+//   }
+// };
+
+// console.log(twoSum(arr, target));
+
+// const arr = [2, 7, 11, 16];
+// const target = 13;
+
+// const map = {};
+// console.log(map[11]);
+// map[2] = 0;
+// console.log(map);
+
+// console.log(map[6]);
+// map[7] = 1;
+// console.log(map);
+
+// console.log(map[2]);
+// console.log(map[2]);
+
+// ######################################
+// ######################################
+// ######################################
