@@ -159,3 +159,30 @@
 // ######################################
 // ######################################
 // ######################################
+
+// Palindrome number
+
+// const palindromeNumber = function (num) {
+//   let result = true;
+//   let numNorm = num.toString().split('');
+//   for (let i = 0; i < numNorm.length; i++) {
+//     if (!(numNorm[i] === numNorm.at(-i - 1))) {
+//       result = false;
+//     }
+//   }
+
+//   if (result) {
+//     console.log(`${num} is palindrome number.`);
+//   } else {
+//     console.log(`${num} isn't palindrome number.`);
+//   }
+// };
+
+// palindromeNumber(121);
+// palindromeNumber(1);
+// palindromeNumber(100);
+// palindromeNumber(-121);
+
+// ######################################
+// ######################################
+// ######################################
