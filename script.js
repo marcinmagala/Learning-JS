@@ -186,3 +186,55 @@
 // ######################################
 // ######################################
 // ######################################
+
+// let arr1 = ['a', 'b', 'c', 'd', 'e'];
+
+// const changePlace = function (arr) {
+//   console.log(arr);
+//   if (arr.length !== 1) {
+//     arr = [arr.at(-1), ...arr.slice(1, -1), arr[0]];
+
+//     console.log(arr);
+//   } else console.log(arr);
+// };
+
+// changePlace(arr1);
+
+// Zadanie
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = ['a', 'b', 'c', 'd', 'e'];
+// let arr3 = [a];
+
+// const changePlace = function (arr) {
+// console.log(arr);
+// };
+
+// changePlace(arr1);([5, 2, 3, 4, 1] )
+// changePlace(arr2);(['e', 'b', 'c', 'd', 'a'])
+// changePlace(arr3);([a])
+
+//
+//
+//
+// Rozwiązanie
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = ['a', 'b', 'c', 'd', 'e'];
+// let arr3 = ['a'];
+
+// const changePlace = function (arr) {
+//   console.log(arr);
+//   if (arr.length !== 1) {
+//     arr = [arr.at(-1), ...arr.slice(1, -1), arr[0]];
+
+//     console.log(arr);
+//   } else console.log(arr);
+// };
+
+// changePlace(arr1);
+// changePlace(arr2);
+// changePlace(arr3);
+
+// ######################################
+// ######################################
+// ######################################
