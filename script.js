@@ -239,26 +239,97 @@
 // ######################################
 // ######################################
 
-let balls = [];
-
+let id = -1;
 class Ball {
   constructor(radius, color) {
     this.radius = radius;
     this.color = color;
+    id++;
 
-    // this.id = idBall[i];
-    // console.log(idBall);
-
-    this.addToBalls(this.radius, this.color);
+    // this.addToBalls(this.radius, this.color);
     console.log(`This is ${this.color} ball with ${this.radius}m radius.`);
   }
 
-  addToBalls(radius, color) {
-    balls.push({ radius, color });
+  //   addToBalls(radius, color) {
+  //     balls.push({ id, radius, color });
+  //   }
+
+  makeAllBlue() {
+    this.color = 'blue';
   }
 }
 
-const blueBigBall = new Ball(12, 'blue');
-const redSmallBall = new Ball(6, 'red');
+// new Ball(12, 'blue');
+// const ball1 = new Ball(6, 'red');
+// new Ball(15, 'violet');
+// new Ball(3, 'green');
+// new Ball(11, 'yellow');
+// new Ball(1, 'red');
+// new Ball(14, 'blue');
 
-console.log(balls);
+// console.log(blueBalls);
+
+const balls = [
+  { radius: 12, color: 'blue' },
+  { radius: 6, color: 'red' },
+  { radius: 15, color: 'violet' },
+];
+
+const ballsInObj = balls.map(ball => new Ball(ball.radius, ball.color));
+
+console.log(ballsInObj);
+
+// const makeB = () => setTimeout(makeAsBlue, 3000, ballsInObj[1]);
+
+// const makeAsBlue = ball => {
+//   ball.makeAllBlue();
+//   console.log(ballsInObj);
+// };
+
+// makeB();
+
+// const allInBlue = ballsInObj.forEach(ball => {
+//   ball.makeAllBlue();
+//   console.log(ball);
+// });
+//
+//
+//
+//
+// DZIAŁA
+// const newBalls = ballsInObj.map(ball => ball.makeAllBlue());
+
+// console.log(ballsInObj);
+// console.log(newBalls);
+// DZIAŁA
+//
+//
+//
+//
+//
+
+// console.log(allInBlue);
+
+// console.log(ballsInObj[1].color);
+
+// // console.log(allInBlue);
+
+// const arr1 = [1, 2, 3, 4, 5];
+
+// console.log(arr1);
+
+// const arr2 = arr1.map(arr => arr * 2);
+
+// console.log(arr2);
+
+var array = [
+  { a: '12', b: '10' },
+  { a: '20', b: '22' },
+];
+
+var r = array.map(x => {
+  x.c = Number(x.b) - Number(x.a);
+  return x;
+});
+
+console.log(r);
