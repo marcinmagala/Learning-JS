@@ -238,3 +238,27 @@
 // ######################################
 // ######################################
 // ######################################
+
+let balls = [];
+
+class Ball {
+  constructor(radius, color) {
+    this.radius = radius;
+    this.color = color;
+
+    // this.id = idBall[i];
+    // console.log(idBall);
+
+    this.addToBalls(this.radius, this.color);
+    console.log(`This is ${this.color} ball with ${this.radius}m radius.`);
+  }
+
+  addToBalls(radius, color) {
+    balls.push({ radius, color });
+  }
+}
+
+const blueBigBall = new Ball(12, 'blue');
+const redSmallBall = new Ball(6, 'red');
+
+console.log(balls);
